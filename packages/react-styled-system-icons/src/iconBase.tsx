@@ -1,5 +1,5 @@
 import * as React from "react"
-import styled, { withTheme, DefaultTheme } from "styled-components/macro"
+import styled, { withTheme, DefaultTheme } from "styled-components"
 import {
   color,
   ColorProps,

@@ -20,9 +20,11 @@
   "devDependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.0",
+    "@types/node": "^12.12.6",
     "@types/react": "^16.9.11",
+    "@types/styled-components": "^4.1.21",
+    "@types/styled-system": "^5.1.3",
     "babel-eslint": "^10.0.3",
-    "camelcase": "^5.3.1",
     "cheerio": "^1.0.0-rc.2",
     "copy": "^0.3.2",
     "eslint": "^6.6.0",
@@ -52,8 +54,6 @@
     "build-cjs": "tsc -p ./tsconfig.commonjs.json"
   },
   "dependencies": {
-    "@types/styled-components": "^4.1.21",
-    "@types/styled-system": "^5.1.3",
     "camelcase": "^5.3.1",
     "styled-components": "^4.4.1",
     "styled-system": "^5.1.2"

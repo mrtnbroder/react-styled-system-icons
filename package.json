@@ -6,19 +6,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint": "^6.6.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "lerna": "^3.18.3",
-    "netlify-cli": "^2.20.2",
-    "prettier": "^1.18.2"
+    "lerna": "^3.18.3"
   },
   "scripts": {
     "submodule": "git submodule update --init",
@@ -26,8 +14,5 @@
     "netlify": "netlify",
     "lint": "node ./node_modules/eslint/bin/eslint.js .",
     "version-up": "lerna version"
-  },
-  "dependencies": {
-    "camelcase": "^5.3.1"
   }
 }

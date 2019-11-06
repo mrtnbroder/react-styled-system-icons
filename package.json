@@ -12,5 +12,6 @@
     "submodule": "git submodule update --init",
     "submodule-deinit": "git submodule deinit --all",
     "version-up": "lerna version"
-  }
+  },
+  "version": "0.0.1"
 }

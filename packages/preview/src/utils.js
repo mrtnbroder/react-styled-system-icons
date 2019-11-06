@@ -1,18 +1,18 @@
 import codegen from 'babel-plugin-codegen/macro'
 
 const fn = codegen`
-const { IconsManifest } = require("react-icons/lib/cjs");
+const { IconsManifest } = require("react-styled-system-icons/lib/cjs");
 console.log(IconsManifest);
 
 
 let codes = "(function (id) { switch (id) {";
 IconsManifest.forEach(icon => {
-  codes += 'case "' + icon.id + '":\\nreturn import("react-icons/' + icon.id +'/index");\\n'
+  codes += 'case "' + icon.id + '":\\nreturn import("react-styled-system-icons/' + icon.id +'/index");\\n'
 })
 codes += '}})';
 
 module.exports = codes;
-// module.exports = "import('react-icons/fa/index')"
+// module.exports = "import('react-styled-system-icons/fa/index')"
 `
 
 export function getIcons (iconsId) {
@@ -22,7 +22,7 @@ export function getIcons (iconsId) {
 
   Similar to this code
   ```
-  return import(`react-icons/${iconsId}/index`);
+  return import(`react-styled-system-icons/${iconsId}/index`);
   ```
   */
 

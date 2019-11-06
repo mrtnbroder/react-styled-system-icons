@@ -1,7 +1,7 @@
 import "./sidebar.scss";
 
 import React from "react";
-import { IconsManifest } from "react-icons";
+import { IconsManifest } from "react-styled-system-icons";
 import { NavLink, useHistory } from "react-router-dom";
 
 import Header from "./header";

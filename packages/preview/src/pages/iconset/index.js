@@ -19,7 +19,7 @@ function IconSetPage({ icon }) {
 
       <h2>Import</h2>
       <code>
-        <pre>{`import { ICON_NAME } from "react-icons/${icon.id}";`}</pre>
+        <pre>{`import { ICON_NAME } from "react-styled-system-icons/${icon.id}";`}</pre>
       </code>
 
       <h2>Icons</h2>

@@ -1,4 +1,4 @@
-# react-icons demo
+# react-styled-system-icons demo
 
 ## how to develop
 

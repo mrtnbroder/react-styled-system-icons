@@ -1,4 +1,4 @@
-# react-icons preview site
+# react-styled-system-icons preview site
 
 ## how to develop
 

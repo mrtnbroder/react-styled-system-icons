@@ -1,7 +1,7 @@
 import "./search.scss";
 
 import React from "react";
-import { IconsManifest } from "react-icons";
+import { IconsManifest } from "react-styled-system-icons";
 import { useHistory } from "react-router-dom";
 
 import SearchResults from "./search-results";

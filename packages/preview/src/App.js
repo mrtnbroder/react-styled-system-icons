@@ -1,6 +1,6 @@
 import { createHashHistory } from "history";
 import React, { useState } from "react";
-import { IconsManifest } from "react-icons";
+import { IconsManifest } from "react-styled-system-icons";
 import { Router, Switch } from "react-router";
 import { Route } from "react-router-dom";
 
@@ -29,7 +29,7 @@ function App() {
                 <IconSetPage icon={icon} />
               </Route>
             ))}
- 
+
             <Route path="/search" exact={true}>
               <SearchPage searchText={searchText} />
             </Route>

@@ -1,24 +1,24 @@
-<img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons">
+<img src="https://rawgit.com/gorangajic/react-styled-system-icons/master/react-styled-system-icons.svg" width="120" alt="React Icons">
 
-# [React Icons](https://react-icons.netlify.com)
+# [React Icons](https://react-styled-system-icons.netlify.com)
 
 [![npm][npm-image]][npm-url]
 
-[npm-image]: https://img.shields.io/npm/v/react-icons.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/react-icons
+[npm-image]: https://img.shields.io/npm/v/react-styled-system-icons.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/react-styled-system-icons
 
-Include popular icons in your React projects easly with ```react-icons```, which utilizes ES6 imports that allows you to include only the icons that your project is using.
+Include popular icons in your React projects easly with ```react-styled-system-icons```, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
 ## Installation
 
 ```bash
-npm install react-icons --save
+npm install react-styled-system-icons --save
 ```
 
 ## Usage
 
 ```jsx
-import { FaBeer } from 'react-icons/fa';
+import { FaBeer } from 'react-styled-system-icons/fa';
 
 class Question extends React.Component {
     render() {
@@ -27,9 +27,9 @@ class Question extends React.Component {
 }
 ```
 
-[View the documentation](https://react-icons.netlify.com) for further usage examples and how to use icons from other packages. *NOTE*: each Icon package has it's own subfolder under `react-icons` you import from.
+[View the documentation](https://react-styled-system-icons.netlify.com) for further usage examples and how to use icons from other packages. *NOTE*: each Icon package has it's own subfolder under `react-styled-system-icons` you import from.
 
-For example, to use an icon from **Material Design**, your import would be: `import { ICON_NAME } from 'react-icons/md';`
+For example, to use an icon from **Material Design**, your import would be: `import { ICON_NAME } from 'react-styled-system-icons/md';`
 
 ## Icons
 
@@ -54,12 +54,12 @@ You can add more icons by submitting pull requests or creating issues.
 
 ## Configuration
 
-You can configure react-icons props using [React context API](https://reactjs.org/docs/context.html).
+You can configure react-styled-system-icons props using [React context API](https://reactjs.org/docs/context.html).
 
 requirement React 16.3 or higher.
 
 ```jsx
-import { IconContext } from "react-icons";
+import { IconContext } from "react-styled-system-icons";
 
 <IconContext.Provider value={{ color: "blue", className: "global-class-name" }}>
   <div>
@@ -84,7 +84,7 @@ Import path has changed. You need to rewrite from the old style.
 
 ```jsx
 // OLD IMPORT STYLE
-import FaBeer from 'react-icons/lib/fa/beer';
+import FaBeer from 'react-styled-system-icons/lib/fa/beer';
 
 class Question extends React.Component {
     render() {
@@ -95,7 +95,7 @@ class Question extends React.Component {
 
 ```jsx
 // NEW IMPORT STYLE
-import { FaBeer } from 'react-icons/fa';
+import { FaBeer } from 'react-styled-system-icons/fa';
 
 class Question extends React.Component {
     render() {
@@ -104,7 +104,7 @@ class Question extends React.Component {
 }
 ```
 
-Ending up with a large JS bundle? Check out [this issue](https://github.com/react-icons/react-icons/issues/154).
+Ending up with a large JS bundle? Check out [this issue](https://github.com/react-styled-system-icons/react-styled-system-icons/issues/154).
 
 ### Adjustment CSS
 
@@ -121,20 +121,20 @@ example for give global className
 
 ```tsx
 // app.tsx
-<IconContext.Provider value={{ className: 'react-icons' }}>
+<IconContext.Provider value={{ className: 'react-styled-system-icons' }}>
 
 // app.css
-.react-icons {
+.react-styled-system-icons {
   vertical-align: middle;
 }
 ```
 
 ### TypeScript native support
 
-Dependencies on `@types/react-icons` can be deleted.
+Dependencies on `@types/react-styled-system-icons` can be deleted.
 
 ```bash
-npm remove @types/react-icons
+npm remove @types/react-styled-system-icons
 ```
 
 ## Contribute
@@ -144,14 +144,14 @@ development
 ```bash
 yarn
 yarn submodule  # fetch icon sources
-cd packages/react-icons
+cd packages/react-styled-system-icons
 yarn build
 ```
 
 scripts for run demo
 
 ```bash
-cd packages/react-icons
+cd packages/react-styled-system-icons
 yarn build
 cd ../demo
 yarn start
@@ -160,7 +160,7 @@ yarn start
 run preview site
 
 ```bash
-cd packages/react-icons
+cd packages/react-styled-system-icons
 yarn build
 cd ../preview
 yarn start
@@ -174,7 +174,7 @@ Svg is [supported](http://caniuse.com/#search=svg) by all major browsers.
 
 ### Why ES6 import and not fonts
 
-With `react-icons`, you can serve only the needed icons instead of one big font file to the users, helping you to recognize which icons are used in your project.
+With `react-styled-system-icons`, you can serve only the needed icons instead of one big font file to the users, helping you to recognize which icons are used in your project.
 
 ### Related
 

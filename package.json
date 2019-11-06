@@ -1,24 +1,24 @@
 {
-  "name": "react-icons-root",
+  "name": "react-styled-system-icons-root",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "license": "MIT",
   "devDependencies": {
-    "babel-eslint": "^9.0.0",
-    "eslint": "^5.6.1",
-    "eslint-config-google": "^0.10.0",
-    "eslint-config-prettier": "^3.1.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^7.0.1",
-    "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "lerna": "^3.13.1",
-    "netlify-cli": "^2.0.0",
-    "prettier": "^1.14.3"
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "lerna": "^3.18.3",
+    "netlify-cli": "^2.20.2",
+    "prettier": "^1.18.2"
   },
   "scripts": {
     "submodule": "git submodule update --init",
@@ -28,6 +28,6 @@
     "version-up": "lerna version"
   },
   "dependencies": {
-    "camelcase": "^5.0.0"
+    "camelcase": "^5.3.1"
   }
 }

@@ -1,3 +1,3 @@
-import { FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-styled-system-icons/fa";
 
 console.log(FaTimes);

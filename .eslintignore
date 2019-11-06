@@ -2,6 +2,6 @@
 **/build/*
 **/docs/*
 **/bin/*
-packages/react-icons/lib/*
-packages/react-icons/src/icons/*
-!packages/react-icons/src/icons/index.js
+packages/react-styled-system-icons/lib/*
+packages/react-styled-system-icons/src/icons/*
+!packages/react-styled-system-icons/src/icons/index.js

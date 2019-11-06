@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import {IconContext} from 'react-icons'
-import {FaBeer} from 'react-icons/fa'
+import {IconContext} from 'react-styled-system-icons'
+import {FaBeer} from 'react-styled-system-icons/fa'
 
 const App: React.FC = () => {
   return (

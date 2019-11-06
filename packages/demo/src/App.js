@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 
-import { IconContext } from "react-icons";
-import { FaFolder } from "react-icons/fa";
-import { MdAccessibility } from "react-icons/md";
-import { TiArrowDown } from "react-icons/ti";
+import { IconContext } from "react-styled-system-icons";
+import { FaFolder } from "react-styled-system-icons/fa";
+import { MdAccessibility } from "react-styled-system-icons/md";
+import { TiArrowDown } from "react-styled-system-icons/ti";
 
 class App extends Component {
   render() {

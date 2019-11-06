@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "outDir": "./lib/esm",
+    "strict": true,
+    "target": "esnext"
+  },
+  "exclude": ["src/icons"],
+  "include": ["src/**/*.tsx"]
+}

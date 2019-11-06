@@ -1,6 +1,6 @@
 {
   "name": "react-styled-system-icons",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "SVG React icons of popular icon packs using ES6 imports",
   "license": "MIT",
   "main": "lib",

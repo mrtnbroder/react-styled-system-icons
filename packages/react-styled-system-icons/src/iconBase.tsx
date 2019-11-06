@@ -1,14 +1,25 @@
 import * as React from "react"
-import styled from "styled-components"
-import { compose, color, space } from "styled-system"
-
-import { IconContext, DefaultContext } from "./iconContext"
+import styled, { withTheme, DefaultTheme } from "styled-components/macro"
+import {
+  color,
+  ColorProps,
+  compose,
+  layout,
+  LayoutProps,
+  space,
+  SpaceProps,
+} from "styled-system"
 
 export interface IconTree {
   tag: string
   attr: { [key: string]: string }
   child: IconTree[]
 }
+
+export type IconBaseProps = React.SVGAttributes<SVGElement> &
+  ColorProps &
+  SpaceProps &
+  LayoutProps
 
 function Tree2Element(tree: IconTree[]): React.ReactElement<{}>[] {
   return (
@@ -31,60 +42,43 @@ export function GenIcon(data: IconTree) {
   )
 }
 
-export interface IconBaseProps extends React.SVGAttributes<SVGElement> {
-  children?: React.ReactNode
-  size?: string | number
-  color?: string
-  title?: string
-}
-
 const svgProps = compose(
+  layout,
   color,
   space,
 )
 
-const Svg = styled.svg(svgProps)
+const Svg = styled.svg<IconBaseProps>(svgProps)
 
-export type IconType = (props: IconBaseProps) => JSX.Element
-export function IconBase(
-  props: IconBaseProps & { attr: {} | undefined },
-): JSX.Element {
-  const elem = (conf: IconContext) => {
-    const computedSize = props.size || conf.size || "1em"
-    let className
-    if (conf.className) className = conf.className
-    if (props.className)
-      className = (className ? className + " " : "") + props.className
-    const { attr, title, ...svgProps } = props
+export type IconBaseAllProps = IconBaseProps & {
+  theme?: DefaultTheme
+  attr?: object
+  title?: string
+}
 
+export type IconType = (props: IconBaseAllProps) => JSX.Element
+
+const _IconBase = React.forwardRef<SVGSVGElement, IconBaseAllProps>(
+  ({ title, attr, children, ...props }, ref) => {
+    console.log("props", props)
     return (
       <Svg
         stroke="currentColor"
         fill="currentColor"
         strokeWidth="0"
-        {...conf.attr}
         {...attr}
-        {...svgProps}
-        className={className}
-        style={{
-          color: props.color || conf.color,
-          ...conf.style,
-          ...props.style,
-        }}
-        height={computedSize}
-        width={computedSize}
-        xmlns="http://www.w3.org/2000/svg">
+        {...props}
+        xmlns="http://www.w3.org/2000/svg"
+        ref={ref}>
         {title && <title>{title}</title>}
-        {props.children}
+        {children}
       </Svg>
     )
-  }
+  },
+)
 
-  return IconContext !== undefined ? (
-    <IconContext.Consumer>
-      {(conf: IconContext) => elem(conf)}
-    </IconContext.Consumer>
-  ) : (
-    elem(DefaultContext)
-  )
+export const IconBase = withTheme(_IconBase)
+
+IconBase.defaultProps = {
+  size: 24,
 }

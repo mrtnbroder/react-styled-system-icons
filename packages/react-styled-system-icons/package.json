@@ -1,6 +1,6 @@
 {
   "name": "react-styled-system-icons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SVG React icons of popular icon packs using ES6 imports",
   "license": "MIT",
   "main": "lib",
@@ -14,9 +14,6 @@
     "url": "https://github.com/mrtnbroder/react-styled-system-icons/issues"
   },
   "homepage": "https://github.com/mrtnbroder/react-styled-system-icons#readme",
-  "peerDependencies": {
-    "react": "*"
-  },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.0",
@@ -54,8 +51,9 @@
     "build-mjs": "tsc && babel ./lib/esm -d ./lib/esm",
     "build-cjs": "tsc -p ./tsconfig.commonjs.json"
   },
-  "dependencies": {
-    "styled-components": "^4.4.1",
+  "peerDependencies": {
+    "react": "^16.11.0",
+    "styled-components": "^5.0.0-rc.1",
     "styled-system": "^5.1.2"
   }
 }

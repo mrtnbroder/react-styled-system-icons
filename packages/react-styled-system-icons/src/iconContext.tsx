@@ -1,8 +1,8 @@
 import * as React from "react"
 
 export interface IconContext {
-  color?: any
-  size?: any
+  color?: string
+  size?: string | number
   className?: string
   style?: React.CSSProperties
   attr?: React.SVGAttributes<SVGElement>

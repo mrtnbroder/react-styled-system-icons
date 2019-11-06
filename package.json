@@ -11,8 +11,6 @@
   "scripts": {
     "submodule": "git submodule update --init",
     "submodule-deinit": "git submodule deinit --all",
-    "netlify": "netlify",
-    "lint": "node ./node_modules/eslint/bin/eslint.js .",
     "version-up": "lerna version"
   }
 }

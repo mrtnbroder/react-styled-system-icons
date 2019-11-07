@@ -60,7 +60,6 @@ export type IconType = (props: IconBaseAllProps) => JSX.Element
 
 const _IconBase = React.forwardRef<SVGSVGElement, IconBaseAllProps>(
   ({ title, attr, children, ...props }, ref) => {
-    console.log("props", props)
     return (
       <Svg
         stroke="currentColor"
